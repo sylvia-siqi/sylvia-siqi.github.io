@@ -351,8 +351,8 @@ h2, h2.content-wrapper, h4{
 
     h3{
         font-size:1.2rem;
-        margin-bottom:1rem;
-    }
+        margin-bottom:.5rem;
+    } 
 
     #define .long-p{
         grid-template-columns:auto;
