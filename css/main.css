@@ -9,9 +9,8 @@ genral text and container styling
     --black:#19181b;
     --grey: #f8f8f8;
     /* --cyan: #99ffff; */
-    --cyan: #e6ff80;
+    --cyan: #f3ffc1;
     --lightpurple:#F1EEFB;
-    --yellow:#E1F401;
 }
 
 *, ::after, ::before{
