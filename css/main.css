@@ -6,11 +6,13 @@ genral text and container styling
     /* --blue: #6633ff; */
     --blue:#A769BF;
     --white: #fff;
-    --black:#19181b;
+    --black:#201329;
+    --green: #34AC59;
     --grey: #f8f8f8;
     /* --cyan: #99ffff; */
-    --cyan: #f3ffc1;
+    --cyan: #fbf5c9;
     --lightpurple:#F1EEFB;
+    --page-accent-color:#ff00ff;
 }
 
 *, ::after, ::before{
@@ -163,13 +165,14 @@ a, a.text-link{
     overflow: visible;
     text-decoration: none;
     /* padding: 1rem; */
-    border-radius: 50%;
-    font-weight:bold;
+    border-radius: 5%;
+    /* font-weight:bold; */
 }
 
 a:hover, a:focus, a.text-link:hover, a.text-link:focus, .icon-link:hover, .icon-link:focus{
     transition-duration: .3s ;
-    background: var(--cyan);   
+    background: var(--cyan);  
+    color: var(--green); 
     text-decoration: none;
     /* font-weight: 500; */
     
