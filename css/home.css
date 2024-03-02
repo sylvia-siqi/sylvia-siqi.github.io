@@ -429,6 +429,11 @@ project card
         max-width: 100%;
     } 
 
+    .proj-groups{
+        grid-template-columns:1fr 1fr;
+        gap:2.5rem;
+    }
+
     .proj-dscrp{
         font-size:1.2rem;
         margin-bottom: 1rem;
@@ -457,10 +462,7 @@ project card
         height: max(57vw, 40rem);
     }
 
-    .proj-card{
-        grid-template-columns:2fr 3fr;
-        column-gap:3rem;
-    }
+
 
     .proj-dscrp{
         width:100%;
@@ -468,23 +470,9 @@ project card
         margin-top: 0 ;
     }
 
-    .proj-ttl{
-        font-size:2.2rem;
-        margin-bottom: .5rem;
-        grid-area: 1/1/2/3;
-    }
-
     .proj-card ul{
         width:90%;
         flex-direction:column;
-    }
-    .proj-display{
-        grid-area: 2/2/5/3;
-    }
-
-    .proj-card .proj-circle{
-        grid-area:1/2/2/3;
-        top:-1rem;
     }
 
     .bio-content{
