@@ -178,8 +178,9 @@ project card
 /* bio section */
 
 #bio {
-    background-color: var(--lightpurple);
+    background-color: var(--grey);
     color: var(--black);
+    padding-top: 2rem;
     padding-bottom: 3rem;
     max-width: 100%;
 }

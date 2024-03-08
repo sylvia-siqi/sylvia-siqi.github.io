@@ -75,7 +75,7 @@ function myToggleMenu(x) {
         }
 
         document.querySelector('#main-nav').style.flexFlow="row nowrap"
-        menu.style.gridTemplateColumns = "1fr 1fr";
+        menu.style.gridTemplateColumns = "1fr 1fr 1fr";
     }
   }
 

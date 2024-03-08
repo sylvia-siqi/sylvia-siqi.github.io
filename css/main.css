@@ -10,6 +10,8 @@ genral text and container styling
     --purpleMid:#39229B;/*medium ccent color*/
     --purpleLight: #8B62F6;
     --green: #148a39;
+    --Onboard:#0973FE;
+    --SaveIt:#084ABE;
 }
 
 *, ::after, ::before{
@@ -214,7 +216,7 @@ nav
 }
 
 .main-nav a{
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -301,7 +303,8 @@ footer ul{
 
 @media(min-width:24rem){
     .nav-collapse{
-        gap: 2rem;
+        gap: 1rem;
+        display: flex;
     }
 }
 
@@ -333,7 +336,7 @@ footer ul{
     }
 
     .main-nav a{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -344,6 +347,6 @@ footer ul{
     }
 
     .main-nav{
-        padding: 1.4rem 7%;
+        padding: 1.3rem 7%;
     }
 }

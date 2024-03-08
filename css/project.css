@@ -4,7 +4,7 @@ figure{
 .other-proj{
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color:var(--lightpurple);
+    background-color:var(--grey);
 }
 
 .other-proj.content-wrapper{
@@ -12,8 +12,10 @@ figure{
 }
 
 .other-proj-grp{
-    display:flex;
+   display:flex;
    flex-wrap: wrap;
+   align-items: center;
+   justify-items: center;
 }
 
 .other-proj a{
@@ -52,7 +54,8 @@ ul.prj-type li{
 }
 
 h1{
-    /* font-weight: bold; */
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 h4.example{
@@ -161,7 +164,7 @@ h2, h2.content-wrapper, h4{
     }
 
    h1{
-    font-size: 3.5rem;
+    font-size: 3rem;
    }
 
     .prj-info{
@@ -229,7 +232,7 @@ h2, h2.content-wrapper, h4{
 @media(min-width:62rem){
       
     h1{
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
     .prj-info{
         grid-template: auto auto / 2fr 1fr;
