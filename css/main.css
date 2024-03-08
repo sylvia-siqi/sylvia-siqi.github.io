@@ -19,6 +19,10 @@ genral text and container styling
 /*
 genral text and container styling
 */
+html {
+	scroll-behavior: smooth;
+}
+
 body {  
     font-family: 'Montserrat', sans-serif; 
     color: var(--black);
