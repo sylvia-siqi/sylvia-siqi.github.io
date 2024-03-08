@@ -1,3 +1,6 @@
+figure{
+    width: 100%;
+}
 .other-proj{
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -43,8 +46,13 @@ ul.prj-type li{
     margin-right: 1rem;
 }
 
-h1{
+.prj-step-name {
     font-weight: bold;
+    color: var(--black);
+}
+
+h1{
+    /* font-weight: bold; */
 }
 
 h4.example{
@@ -92,7 +100,7 @@ p.prj-intro{
 }
 
 .prj-info dt {
-    color: var(--blue);
+    color: var(--purpleMid);
     font-weight: 100;
 }
 
@@ -107,7 +115,7 @@ h2, h2.content-wrapper, h4{
 }
 
 .prj-question{
-    background-color: var(--blue);
+    background-color: var(--black);
     color: #fff;
     text-align: center;
     font-size: 1.3rem;

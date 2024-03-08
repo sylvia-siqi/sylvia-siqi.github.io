@@ -3,14 +3,13 @@ genral text and container styling
 */
 :root {
     /*referenced from https://www.w3schools.com/css/css3_variables.asp*/
-    /* --blue: #6633ff; */
-    --blue:#7d55f5;
-    --white: #fff;
-    --black:#19181b;
-    --grey: #f8f8f8;
-    /* --cyan: #99ffff; */
-    --cyan: #f3ffc1;
-    --lightpurple:#F1EEFB;
+    --white: #FEFEFD;
+    --black:#18062F;
+    --darkGrey: #747474;
+    --grey: #F4F2FD;
+    --purpleMid:#39229B;/*medium ccent color*/
+    --purpleLight: #8B62F6;
+    --green: #148a39;
 }
 
 *, ::after, ::before{
@@ -20,11 +19,10 @@ genral text and container styling
 /*
 genral text and container styling
 */
-body {
-    
+body {  
     font-family: 'Montserrat', sans-serif; 
     color: var(--black);
-    background-color: #f8f9ff;
+    background-color: var(--white);
 
     display: grid;
     justify-items: center;
@@ -55,7 +53,7 @@ figure{
     margin: 1em 0;
 }
 figcaption{
-    font-size: .85rem;
+    font-size: .75rem;
 }
 
 section img{
@@ -63,8 +61,8 @@ section img{
 }
 
 .tag{
-    color: var(--blue);
-    font-style:italic;
+    color: var(--darkGrey);
+    font-size: .75rem;
 }
 
 section{
@@ -77,16 +75,16 @@ p, h1, h2, h3,h4{
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Syne', sans-serif;
     line-height: 1.1;
     margin-bottom: .5rem;
 }
 
 h2{
     font-size: 1rem;
-    color:var(--blue) ;
+    color:var(--purpleMid) ;
     font-weight: bold;
     text-transform: uppercase;
-
 }
 
 h3{
@@ -97,7 +95,7 @@ h3{
 
 h4{
     font-size: 1rem;
-    color: var(--blue);
+    color: var(--purpleMid);
 }
 
 
@@ -128,7 +126,7 @@ ol li {
 /* https://css-tricks.com/css-counters-custom-list-number-styling/ */
 ol li::before {
     content: counter(my-awesome-counter) ". ";
-    color: var(--blue);
+    color: var(--purpleMid);
     font-weight: bold;
 }
 
@@ -143,14 +141,13 @@ dd, dt{
     margin-left: 0;
 }
 
-.dot-decor::before, .dot-decor::after {
+/* .dot-decor::before, .dot-decor::after {
     content:"•"
-}
+} */
 
-.tag::before, .tag::after {
+/* .tag::before, .tag::after {
     content:"#"
-}
-
+} */
 
 
 
@@ -158,21 +155,16 @@ dd, dt{
 interactive elements styling 
 */
 a, a.text-link{
-    color: var(--blue);
-    /* display: inline-block; */
+    color: var(--purpleLight);
     overflow: visible;
     text-decoration: none;
-    /* padding: 1rem; */
-    border-radius: 50%;
-    font-weight:bold;
+    border-radius: .1rem;
 }
 
 a:hover, a:focus, a.text-link:hover, a.text-link:focus, .icon-link:hover, .icon-link:focus{
     transition-duration: .3s ;
-    background: var(--cyan);   
+    color: var(--purpleMid); 
     text-decoration: none;
-    /* font-weight: 500; */
-    
 }
 
 .icon-link{
@@ -189,20 +181,19 @@ img.icon-link{
 }
 .icon-link:hover,.icon-link:focus{
     /*Learned this from https://w3bits.com/css-image-hover-zoom/*/
-    transform: scale(1.1);
+    /* transform: scale(1.1);s */
 }
 
 img.img-link{
     /* Learned from https://www.w3schools.com/howto/howto_css_border_image.asp */
-    border: 0.5rem solid var(--orange);
-    border-radius: 1.5rem;
+    /* border: 0.5rem solid var(--orange); */
 }
 img.img-link:hover,img.img-link:focus{
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
 }
 
 i {
-    color: var(--blue);
+    color: var(--purpleMid);
 }
 
 
@@ -247,10 +238,9 @@ button:hover{
 }
 
 #menu-toggle svg{
-    fill: var(--blue);
+    fill: var(--purpleMid);
     fill-opacity: 1;
 }
-
 
 
 /* 
@@ -258,7 +248,6 @@ footer
 */
 
 footer{
-    background-color: rgb(250, 250, 250);
     padding: 1.5rem;
     width: 100%;
     margin: 0;
@@ -313,12 +302,6 @@ footer ul{
     display: none;
 }
 
-@media (min-width:12rem){
-    h2{
-        letter-spacing: .1rem;
-    }
-
-}
 
 @media(min-width:24rem){
     .nav-collapse{
@@ -345,7 +328,6 @@ footer ul{
         padding: .9rem 5%;
     }
 }
-
 
 
 @media (min-width:80rem) {
