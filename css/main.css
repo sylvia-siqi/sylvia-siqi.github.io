@@ -62,7 +62,7 @@ section img{
 
 .tag{
     color: var(--darkGrey);
-    font-size: .75rem;
+    font-size: .5rem;
 }
 
 section{
@@ -140,14 +140,6 @@ dd, dt{
     line-height: 1.3;
     margin-left: 0;
 }
-
-/* .dot-decor::before, .dot-decor::after {
-    content:"•"
-} */
-
-/* .tag::before, .tag::after {
-    content:"#"
-} */
 
 
 
