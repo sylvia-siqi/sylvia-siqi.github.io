@@ -4,7 +4,7 @@ figure{
 .other-proj{
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color:var(--lightpurple);
+    background-color:var(--grey);
 }
 
 .other-proj.content-wrapper{
@@ -12,8 +12,10 @@ figure{
 }
 
 .other-proj-grp{
-    display:flex;
+   display:flex;
    flex-wrap: wrap;
+   align-items: center;
+   justify-items: center;
 }
 
 .other-proj a{
@@ -21,7 +23,14 @@ figure{
     padding: .5rem;
     text-align: center;
 }
-
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.gallery * {
+    width:100%
+}
 
 #intro{
     background-color: #fff;
@@ -29,6 +38,10 @@ figure{
 
 #context .prj-question .content-wrapper {
     padding: 1.5rem;
+}
+
+.prj-question {
+    margin-top: 1rem;
 }
 
 figcaption{
@@ -52,7 +65,8 @@ ul.prj-type li{
 }
 
 h1{
-    /* font-weight: bold; */
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 h4.example{
@@ -161,7 +175,7 @@ h2, h2.content-wrapper, h4{
     }
 
    h1{
-    font-size: 3.5rem;
+    font-size: 3rem;
    }
 
     .prj-info{
@@ -229,7 +243,7 @@ h2, h2.content-wrapper, h4{
 @media(min-width:62rem){
       
     h1{
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
     .prj-info{
         grid-template: auto auto / 2fr 1fr;
@@ -256,7 +270,7 @@ h2, h2.content-wrapper, h4{
     .feature h4{
         margin-top: 0;
     }
-    
+
 }
 
 @media(min-width:92rem){
@@ -277,7 +291,6 @@ h2, h2.content-wrapper, h4{
         column-gap: 3rem;
         max-width: 100%;
         margin:1rem 0 1rem 6rem;
-
     }
 
     .sub-step.no-column{
@@ -297,6 +310,14 @@ h2, h2.content-wrapper, h4{
         width:90%;
     }
 
+    .half-img-div{
+        width: 45%;
+    }
+    .two-col-fig{
+        display: flex;
+        justify-content: space-between;
+    }
+
     figcaption, p.example{
         margin-top: 0.8rem;
         font-size: 1rem;
@@ -309,6 +330,10 @@ h2, h2.content-wrapper, h4{
     .prj-question{
         grid-column: 1/3;
         font-size:1.6rem;
+    }
+
+    .prj-question p{
+        max-width: 72rem;
     }
 
     .two-colmns section{
@@ -333,7 +358,6 @@ h2, h2.content-wrapper, h4{
         grid-template-columns: 1fr; 
         column-gap: 2rem;
         margin-top:1rem;
-
     }
 
     #deliver .feature div{
@@ -390,3 +414,12 @@ h2, h2.content-wrapper, h4{
 }
       
 
+@media (min-width:140rem) {
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallery img{
+        grid-column: auto;
+        width: 100%;
+    }
+}

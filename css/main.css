@@ -10,6 +10,9 @@ genral text and container styling
     --purpleMid:#39229B;/*medium ccent color*/
     --purpleLight: #8B62F6;
     --green: #148a39;
+    --Onboard:#0990fe;
+    --SaveIt:#084ABE;
+    --FORGE:#8A34B1;
 }
 
 *, ::after, ::before{
@@ -19,6 +22,10 @@ genral text and container styling
 /*
 genral text and container styling
 */
+html {
+	scroll-behavior: smooth;
+}
+
 body {  
     font-family: 'Montserrat', sans-serif; 
     color: var(--black);
@@ -98,8 +105,6 @@ h4{
     color: var(--purpleMid);
 }
 
-
-
 p{
     margin-bottom: .5rem;
     margin-top: .5rem;
@@ -171,18 +176,6 @@ img.icon-link{
     max-width: min(80%,6rem);
     max-height: min(80%,6rem);
 }
-.icon-link:hover,.icon-link:focus{
-    /*Learned this from https://w3bits.com/css-image-hover-zoom/*/
-    /* transform: scale(1.1);s */
-}
-
-img.img-link{
-    /* Learned from https://www.w3schools.com/howto/howto_css_border_image.asp */
-    /* border: 0.5rem solid var(--orange); */
-}
-img.img-link:hover,img.img-link:focus{
-    /* transform: scale(1.05); */
-}
 
 i {
     color: var(--purpleMid);
@@ -210,7 +203,7 @@ nav
 }
 
 .main-nav a{
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -297,7 +290,8 @@ footer ul{
 
 @media(min-width:24rem){
     .nav-collapse{
-        gap: 2rem;
+        gap: 1rem;
+        display: flex;
     }
 }
 
@@ -329,7 +323,7 @@ footer ul{
     }
 
     .main-nav a{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -340,6 +334,6 @@ footer ul{
     }
 
     .main-nav{
-        padding: 1.4rem 7%;
+        padding: 1.3rem 7%;
     }
 }
