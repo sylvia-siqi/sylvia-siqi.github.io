@@ -91,3 +91,7 @@ function myToggleMenu(x) {
     var screenWidth=window.matchMedia("(max-width: 25rem");
     myToggleMenu(screenWidth);
   }
+
+
+  //lazyload
+  var lazyload_instance= new LazyLoad({ })
