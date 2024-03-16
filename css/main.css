@@ -15,6 +15,16 @@ genral text and container styling
     --FORGE:#8A34B1;
 }
 
+.lazy {
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+  }
+
+  .lazy.loaded {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+
 *, ::after, ::before{
     box-sizing: border-box;
 }
