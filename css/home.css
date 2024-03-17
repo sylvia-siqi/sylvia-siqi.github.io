@@ -220,6 +220,11 @@ project card
 #bio ul {
     margin: 0;
 }
+#bio h4{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--black);
+}
 
 #bio .bio-mini-section h3, .bio-mini-section h4{
  margin: 0;
@@ -447,7 +452,7 @@ project card
     }
 
     .bio-content{
-        grid-template-columns: auto auto;
+        grid-template-columns: 4fr 7fr;
         gap: 2.5rem;
     }
 }
