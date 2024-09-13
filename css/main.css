@@ -86,9 +86,13 @@ section{
    display: grid;
 }
 
+em{
+    font-weight: 600;
+    font-style: normal;
+}
+
 p, h1, h2, h3,h4{
     max-width: 60rem;
-    font-weight: 500;
 }
 
 h1, h2, h3, h4, h5, h6 {

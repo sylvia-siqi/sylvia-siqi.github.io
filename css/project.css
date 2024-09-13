@@ -40,8 +40,20 @@ figure{
     padding: 1.5rem;
 }
 
+.scroll-link{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
 .prj-question {
-    margin-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--black);
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+    display: grid;
+    justify-items: center;
 }
 
 figcaption{
@@ -62,6 +74,7 @@ ul.prj-type li{
 .prj-step-name {
     font-weight: bold;
     color: var(--black);
+    margin-top: 3rem;
 }
 
 h1{
@@ -115,7 +128,6 @@ p.prj-intro{
 
 .prj-info dt {
     color: var(--purpleMid);
-    font-weight: 100;
 }
 
 .prj-content{
@@ -128,15 +140,6 @@ h2, h2.content-wrapper, h4{
    padding-bottom: 0;
 }
 
-.prj-question{
-    background-color: var(--black);
-    color: #fff;
-    text-align: center;
-    font-size: 1.3rem;
-    display: grid;
-    justify-items: center;
-
-}
 
 .feature{
     margin-bottom: 1rem;
