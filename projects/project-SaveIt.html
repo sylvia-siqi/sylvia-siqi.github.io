@@ -20,6 +20,9 @@
         <link rel="stylesheet" href="../css/project.css">
 
         <style>
+            :root {
+                --project-accent: var(--SaveIt);
+            }
             .prj-step-name { color: var(--SaveIt);}
             .prj-question {background-color: var(--SaveIt);}
             .prj-info dt { color: var(--SaveIt);}
@@ -51,6 +54,17 @@
             <div  id="intro">
                 <img class="hero" src="../image/project-SaveIt/hero-SaveIt.jpg"  alt="hero image showing the mock up of the SaveIt app on a laptop" width="1440" height="720">
             </div>
+
+            <nav class="project-section-nav" aria-label="Project section navigation">
+                <ul class="content-wrapper">
+                    <li><a href="#context" class="active">Context</a></li>
+                    <li><a href="#discover">Discover</a></li>
+                    <li><a href="#define">Define</a></li>
+                    <li><a href="#develop">Develop</a></li>
+                    <li><a href="#deliver">Deliver</a></li>
+                    <li><a href="#reflection">Reflection</a></li>
+                </ul>
+            </nav>
 
             <section class="prj-info content-wrapper">
                 <div class="info-name">
@@ -158,7 +172,7 @@
                     </div>
                 </section>
                     
-                <section class="prj-step content-wrapper">
+                <section class="prj-step content-wrapper" id="develop">
                     <h2 class="prj-step-name dot-decor">Develop</h2>
 
                     <section class="sub-step">
@@ -308,9 +322,9 @@
 
 
     <!--add script at bottom-->
-    <script src="js/nav-dropdown.js"></script>
+    <script src="../js/nav-dropdown.js"></script>
+    <script src="../js/project-section-nav.js"></script>
     </body>
 
 </html>
 
-       

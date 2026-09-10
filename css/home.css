@@ -117,6 +117,7 @@ project card
 .proj-card ul{
     margin: 0;
     margin-top: .5rem;
+    margin-bottom: .25rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -155,10 +156,47 @@ project card
     top:0;
     max-width: 100%;
     height: auto;
+    position: relative;
 }
 
 .proj-preview *{
     grid-area: 1/1/2/2;
+}
+
+.proj-nda-overlay {
+    display: none;
+    position: absolute;
+    inset: 0;
+    background: rgba(57, 34, 155, 0.88);
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+#Geotab .proj-preview:hover .proj-nda-overlay,
+#Geotab .proj-preview:focus .proj-nda-overlay {
+    opacity: 1;
+}
+
+.nda-title {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 .5rem 0;
+    max-width: 20rem;
+}
+
+.nda-subtitle {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: .95rem;
+    margin: 0;
+    max-width: 20rem;
 }
 
 .proj-ttl{
@@ -427,16 +465,33 @@ project card
 
 
     .proj-groups{
-        grid-template-columns:5fr 2fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: AUTO AUTO AUTO;
-        gap:0 2.5rem;
+        gap: 0 2.5rem;
+    }
+    #UI\/UX{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #SaveIt{
+        grid-area: 1/1/2/4;
+    }
+    #Geotab{
+        grid-area: 2/1/4/3;
+    }
+    #OnboardEase{
+        grid-area: 2/3/3/4;
+        align-self: start;
+    }
+    #MoreUX{
+        grid-area: 3/3/4/4;
+        align-self: start;
     }
     #Graphic{
-        grid-template-columns:2fr 5fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     #DC{
-        grid-area: 1/2/3/3;
+        grid-area: 1/2/3/4;
     }
     #FINSA{
         grid-area: 1/1/2/2;

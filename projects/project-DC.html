@@ -19,6 +19,9 @@
 		<link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="../css/project.css">
         <style>
+            :root {
+                --project-accent: var(--green);
+            }
             .prj-step-name { color: var(--green);}
             .prj-question {background-color: var(--green);}
             .prj-info dt { color: var(--green);}
@@ -49,7 +52,16 @@
             <div  id="intro">
                 <img class="hero" src="../image/project-DC/hero-DC.jpg"  alt="hero image" width="1440" height="720">
             </div>
-
+            <nav class="project-section-nav" aria-label="Project section navigation">
+                <ul class="content-wrapper">
+                    <li><a href="#context" class="active">Context</a></li>
+                    <li><a href="#discover">Discover</a></li>
+                    <li><a href="#define">Define</a></li>
+                    <li><a href="#develop">Develop</a></li>
+                    <li><a href="#deliver">Deliver</a></li>
+                    <li><a href="#reflection">Reflection</a></li>
+                </ul>
+            </nav>
             <section class="prj-info content-wrapper">
                 <div class="info-name">
                     <h1 class="prj-name">Royals Athletics Visual Identity</h1>
@@ -291,9 +303,9 @@
 
 
     <!--add script at bottom-->
-    <script src="js/nav-dropdown.js"></script>
+    <script src="../js/nav-dropdown.js"></script>
+    <script src="../js/project-section-nav.js"></script>
     </body>
 
 </html>
 
-       
